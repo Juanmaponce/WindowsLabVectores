@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnPromedio = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnPromedio
+            // 
+            this.btnPromedio.Location = new System.Drawing.Point(264, 156);
+            this.btnPromedio.Name = "btnPromedio";
+            this.btnPromedio.Size = new System.Drawing.Size(213, 23);
+            this.btnPromedio.TabIndex = 0;
+            this.btnPromedio.Text = "Calcular Promedio";
+            this.btnPromedio.UseVisualStyleBackColor = true;
+            this.btnPromedio.Click += new System.EventHandler(this.btnPromedio_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPromedio);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnPromedio;
     }
 }
 
